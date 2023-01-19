@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Count</title>
+        <link href="gptex.css" rel="stylesheet">
+        
+        
+</head>
+
+<body>
+    <div class="div1">         
+        
+          
+            <button id="butt" class="buttt" type="count" onclick="count()">click here</button>
+            <p class="textt" id="text">  </p>
+            
+            
+            <script>
+            let counter = 0;
+            let resultat = document.getElementById("text");
+            
+
+            function count() {
+                
+                counter += 1; //le compte augmente de 1 à chaque click//
+                resultat.innerHTML = counter; //le résultat s'affiche et évolue à chaque click//
+            }
+
+            let button = document.getElementById("butt");
+            let color = "goldenrod";
+
+                button.addEventListener("click", function() { //la fonction est lancée au click
+                 if (color === "cornflowerblue") { //si la couleur est '' elle est changée en ''
+                    color = "goldenrod";
+                 } else {  //si la couleur est '' elle est changée en ''
+                    color = "cornflowerblue";
+                 }
+                    button.style.backgroundColor = color;
+            });
+            </script>
+    </div>
+</body>
